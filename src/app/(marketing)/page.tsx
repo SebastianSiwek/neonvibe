@@ -4,7 +4,9 @@ import { TubesBackground } from "@/components/TubesBackground";
 import NeonButton from "@/components/NeonButton";
 import ProductCard from "@/components/ProductCard";
 import SectionHeading from "@/components/SectionHeading";
-import { Palette, Zap, ShieldCheck } from "lucide-react";
+import { Palette, Zap, ShieldCheck, Quote, Star, ArrowRight, Clock } from "lucide-react";
+import Link from "next/link";
+import { blogPosts } from "@/lib/blog-data";
 
 const features = [
   {
@@ -45,6 +47,24 @@ const bestsellers = [
     description: "Unikalne kształty i wzory, które oświetlą Twoją przestrzeń.",
     price: "od 199 zł",
     href: "/produkty",
+  },
+];
+
+const testimonials = [
+  {
+    name: "Marta Kowalska",
+    company: "Restauracja Sakura",
+    text: "Neon z logo naszej restauracji przyciąga klientów jak magnes. Jakość wykonania jest doskonała, a obsługa bardzo profesjonalna.",
+  },
+  {
+    name: "Tomasz Wiśniewski",
+    company: "Studio Fitness Vibe",
+    text: "Zamówiliśmy napis motywacyjny do sali treningowej. Efekt przeszedł nasze oczekiwania - klienci uwielbiają robić sobie przy nim zdjęcia!",
+  },
+  {
+    name: "Anna Nowak",
+    company: "Salon Glow Beauty",
+    text: "Szybka realizacja i świetny kontakt. Neon idealnie pasuje do wystroju naszego salonu. Na pewno wrócimy po więcej.",
   },
 ];
 
@@ -102,6 +122,72 @@ export default function HomePage() {
           {bestsellers.map((product) => (
             <ProductCard key={product.title} {...product} />
           ))}
+        </div>
+      </section>
+
+      {/* Social Proof */}
+      <section className="py-24 px-4">
+        <SectionHeading
+          title="Co mówią nasi klienci"
+          subtitle="Zaufało nam ponad 200 firm i osób prywatnych w całej Polsce."
+        />
+        <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
+          {testimonials.map((testimonial) => (
+            <div
+              key={testimonial.name}
+              className="rounded-xl bg-surface p-6"
+            >
+              <Quote className="mb-4 h-8 w-8 text-primary/40" />
+              <p className="mb-6 text-sm leading-relaxed text-foreground/80">
+                {testimonial.text}
+              </p>
+              <div className="flex items-center gap-1 mb-3">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                ))}
+              </div>
+              <p className="font-heading text-sm font-semibold">{testimonial.name}</p>
+              <p className="text-xs text-muted">{testimonial.company}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Blog */}
+      <section className="bg-surface/30 py-24 px-4">
+        <SectionHeading
+          title="Z naszego bloga"
+          subtitle="Porady, inspiracje i nowości ze świata neonów LED."
+        />
+        <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
+          {blogPosts.slice(0, 3).map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="group rounded-xl bg-surface p-6 transition-all duration-300 hover:neon-border"
+            >
+              <div className="mb-3 flex items-center gap-3 text-xs text-muted">
+                <span>{post.date}</span>
+                <span className="flex items-center gap-1">
+                  <Clock className="h-3 w-3" />
+                  {post.readTime}
+                </span>
+              </div>
+              <h3 className="mb-2 font-heading text-lg font-semibold group-hover:text-primary transition-colors">
+                {post.title}
+              </h3>
+              <p className="mb-4 text-sm text-muted line-clamp-2">{post.excerpt}</p>
+              <span className="inline-flex items-center gap-1 text-sm font-medium text-secondary group-hover:text-foreground transition-colors">
+                Czytaj więcej
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
+            </Link>
+          ))}
+        </div>
+        <div className="mt-12 text-center">
+          <NeonButton href="/blog" variant="outline">
+            Zobacz wszystkie wpisy
+          </NeonButton>
         </div>
       </section>
 
