@@ -75,7 +75,7 @@ export default function HomePage() {
 
       {/* Why Us Section */}
       <section className="py-24 px-4">
-        <SectionHeading title="Dlaczego NeonVibe?" />
+        <SectionHeading title="Dlaczego LED-Zone?" />
         <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
           {features.map((feature) => {
             const Icon = feature.icon;

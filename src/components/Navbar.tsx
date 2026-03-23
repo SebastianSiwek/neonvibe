@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="font-heading text-2xl font-bold text-primary neon-text-primary">
-            NeonVibe
+            LED-Zone
           </Link>
 
           {/* Desktop nav */}

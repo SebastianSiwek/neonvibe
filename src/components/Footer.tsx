@@ -16,7 +16,7 @@ export default function Footer() {
           {/* Col 1: Logo + description */}
           <div>
             <Link href="/" className="font-heading text-2xl font-bold text-primary neon-text-primary">
-              NeonVibe
+              LED-Zone
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted">
               Tworzymy unikalne neony LED i znaki świetlne na zamówienie.
@@ -51,11 +51,11 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li>
                 <a
-                  href="mailto:kontakt@neonvibe.pl"
+                  href="mailto:kontakt@led-zone.pl"
                   className="flex items-center gap-2 text-sm text-muted transition-colors duration-200 hover:text-foreground"
                 >
                   <Mail className="h-4 w-4 shrink-0 text-primary" />
-                  kontakt@neonvibe.pl
+                  kontakt@led-zone.pl
                 </a>
               </li>
               <li>
@@ -76,7 +76,7 @@ export default function Footer() {
       <div className="border-t border-white/5">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
           <p className="text-center text-xs text-muted">
-            &copy; 2026 NeonVibe. Wszystkie prawa zastrzeżone.
+            &copy; 2026 LED-Zone. Wszystkie prawa zastrzeżone.
           </p>
         </div>
       </div>

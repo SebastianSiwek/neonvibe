@@ -16,8 +16,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "NeonVibe - Neony LED na zamówienie",
-    template: "%s | NeonVibe",
+    default: "LED-Zone - Neony LED na zamówienie",
+    template: "%s | LED-Zone",
   },
   description:
     "Tworzymy unikalne neony LED i znaki świetlne na zamówienie. Indywidualny projekt, szybka realizacja, gwarancja jakości.",

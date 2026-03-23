@@ -126,7 +126,7 @@ export function TubesBackground({
         className={`absolute inset-0 w-full h-full block transition-opacity duration-700 ${
           isLoading ? "opacity-0" : "opacity-100"
         }`}
-        style={{ touchAction: "none" }}
+        style={{ touchAction: "pan-y" }}
       />
 
       {/* Content overlay */}

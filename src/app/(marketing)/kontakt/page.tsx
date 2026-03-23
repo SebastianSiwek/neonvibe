@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const contactInfo = [
-  { icon: Mail, text: "kontakt@neonvibe.pl" },
+  { icon: Mail, text: "kontakt@led-zone.pl" },
   { icon: Phone, text: "+48 123 456 789" },
   { icon: MapPin, text: "ul. Neonowa 42, 00-001 Warszawa" },
 ];
