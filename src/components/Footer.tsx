@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
 
 const navLinks = [
-  { label: "Strona glowna", href: "/" },
+  { label: "Strona główna", href: "/" },
   { label: "Produkty", href: "/produkty" },
   { label: "Realizacje", href: "/realizacje" },
   { label: "Kontakt", href: "/kontakt" },
@@ -19,8 +19,8 @@ export default function Footer() {
               NeonVibe
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-muted">
-              Tworzymy unikalne neony LED i znaki swietlne na zamowienie.
-              Indywidualny projekt, szybka realizacja, gwarancja jakosci.
+              Tworzymy unikalne neony LED i znaki świetlne na zamówienie.
+              Indywidualny projekt, szybka realizacja, gwarancja jakości.
             </p>
           </div>
 
@@ -76,7 +76,7 @@ export default function Footer() {
       <div className="border-t border-white/5">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
           <p className="text-center text-xs text-muted">
-            &copy; 2026 NeonVibe. Wszystkie prawa zastrzezone.
+            &copy; 2026 NeonVibe. Wszystkie prawa zastrzeżone.
           </p>
         </div>
       </div>

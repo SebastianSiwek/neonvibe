@@ -19,10 +19,10 @@ export default function KontaktPage() {
         {/* Left column - info */}
         <div>
           <h1 className="mb-4 font-heading text-4xl font-bold">
-            Zamow swoj neon
+            Zamów swój neon
           </h1>
           <p className="mb-8 text-muted">
-            Opisz nam swoj pomysl, a my przygotujemy wycene i wizualizacje.
+            Opisz nam swój pomysł, a my przygotujemy wycenę i wizualizację.
           </p>
 
           <div className="space-y-4">

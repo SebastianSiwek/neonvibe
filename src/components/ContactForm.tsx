@@ -33,11 +33,11 @@ export default function ContactForm() {
     return (
       <div className="rounded-2xl border border-white/10 bg-surface px-6 py-12 text-center">
         <p className="font-heading text-2xl font-bold text-primary neon-text-primary">
-          Dziekujemy!
+          Dziękujemy!
         </p>
         <p className="mt-3 text-muted">
-          Twoje zapytanie zostalo wyslane. Odezwiemy sie najszybciej jak to
-          mozliwe.
+          Twoje zapytanie zostało wysłane. Odezwiemy się najszybciej jak to
+          możliwe.
         </p>
       </div>
     );
@@ -53,7 +53,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <div>
           <label htmlFor="name" className={labelClasses}>
-            Imie i nazwisko
+            Imię i nazwisko
           </label>
           <input
             id="name"
@@ -102,7 +102,7 @@ export default function ContactForm() {
       {/* Message - full width */}
       <div>
         <label htmlFor="message" className={labelClasses}>
-          Wiadomosc
+          Wiadomość
         </label>
         <textarea
           id="message"
@@ -111,7 +111,7 @@ export default function ContactForm() {
           rows={5}
           value={formData.message}
           onChange={handleChange}
-          placeholder="Opisz swoj pomysl na neon..."
+          placeholder="Opisz swój pomysł na neon..."
           className={`${inputClasses} resize-y`}
         />
       </div>
@@ -122,7 +122,7 @@ export default function ContactForm() {
           type="submit"
           className="rounded-full bg-primary px-8 py-3 font-heading font-semibold text-background transition-all duration-300 hover:neon-glow-primary hover:scale-[1.02] active:scale-[0.98]"
         >
-          Wyslij zapytanie
+          Wyślij zapytanie
         </button>
       </div>
     </form>

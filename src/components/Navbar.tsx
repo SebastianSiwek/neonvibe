@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "Strona glowna", href: "/" },
+  { label: "Strona główna", href: "/" },
   { label: "Produkty", href: "/produkty" },
   { label: "Realizacje", href: "/realizacje" },
   { label: "Kontakt", href: "/kontakt" },
@@ -38,7 +38,7 @@ export default function Navbar() {
               href="/kontakt"
               className="rounded-full bg-primary px-6 py-2.5 text-sm font-heading font-semibold text-background transition-all duration-300 hover:neon-glow-primary"
             >
-              Zamow neon
+              Zamów neon
             </Link>
           </div>
 
@@ -47,7 +47,7 @@ export default function Navbar() {
             type="button"
             className="md:hidden p-2 text-foreground/70 hover:text-foreground transition-colors"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label={isOpen ? "Zamknij menu" : "Otworz menu"}
+            aria-label={isOpen ? "Zamknij menu" : "Otwórz menu"}
             aria-expanded={isOpen}
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -77,7 +77,7 @@ export default function Navbar() {
             className="block rounded-full bg-primary px-6 py-2.5 text-center text-sm font-heading font-semibold text-background transition-all duration-300 hover:neon-glow-primary"
             onClick={() => setIsOpen(false)}
           >
-            Zamow neon
+            Zamów neon
           </Link>
         </div>
       </div>

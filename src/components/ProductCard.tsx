@@ -17,7 +17,7 @@ export default function ProductCard({ title, description, price, href }: Product
           <div className="h-24 w-24 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 blur-xl transition-transform duration-500 group-hover:scale-150" />
         </div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-xs uppercase tracking-widest text-muted">Zdjecie produktu</span>
+          <span className="text-xs uppercase tracking-widest text-muted">Zdjęcie produktu</span>
         </div>
       </div>
 
@@ -39,7 +39,7 @@ export default function ProductCard({ title, description, price, href }: Product
         href={href}
         className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-secondary transition-colors duration-200 hover:text-foreground"
       >
-        Zobacz wiecej
+        Zobacz więcej
         <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
       </Link>
     </div>

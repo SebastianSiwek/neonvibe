@@ -16,11 +16,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "NeonVibe - Neony LED na zamowienie",
+    default: "NeonVibe - Neony LED na zamówienie",
     template: "%s | NeonVibe",
   },
   description:
-    "Tworzymy unikalne neony LED i znaki swietlne na zamowienie. Indywidualny projekt, szybka realizacja, gwarancja jakosci.",
+    "Tworzymy unikalne neony LED i znaki świetlne na zamówienie. Indywidualny projekt, szybka realizacja, gwarancja jakości.",
 };
 
 export default function RootLayout({

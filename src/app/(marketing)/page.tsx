@@ -11,7 +11,7 @@ const features = [
     icon: Palette,
     title: "Indywidualny projekt",
     description:
-      "Kazdy neon projektujemy od podstaw, dopasowujac go do Twojej wizji i potrzeb.",
+      "Każdy neon projektujemy od podstaw, dopasowując go do Twojej wizji i potrzeb.",
   },
   {
     icon: Zap,
@@ -21,29 +21,29 @@ const features = [
   },
   {
     icon: ShieldCheck,
-    title: "Gwarancja jakosci",
+    title: "Gwarancja jakości",
     description:
-      "Uzywamy najwyzszej jakosci materialow z 2-letnia gwarancja.",
+      "Używamy najwyższej jakości materiałów z 2-letnią gwarancją.",
   },
 ];
 
 const bestsellers = [
   {
     title: "Neon tekstowy",
-    description: "Napisy, cytaty, hasla - Twoje slowa w neonowym swietle.",
-    price: "od 299 zl",
+    description: "Napisy, cytaty, hasła - Twoje słowa w neonowym świetle.",
+    price: "od 299 zł",
     href: "/produkty",
   },
   {
     title: "Neon logo",
     description: "Logo Twojej firmy jako efektowny neon LED.",
-    price: "od 499 zl",
+    price: "od 499 zł",
     href: "/produkty",
   },
   {
     title: "Neon dekoracyjny",
-    description: "Unikalne ksztalty i wzory, ktore oswieta Twoja przestrzen.",
-    price: "od 199 zl",
+    description: "Unikalne kształty i wzory, które oświetlą Twoją przestrzeń.",
+    price: "od 199 zł",
     href: "/produkty",
   },
 ];
@@ -56,14 +56,14 @@ export default function HomePage() {
         <TubesBackground className="h-screen" enableClickInteraction>
           <div className="flex h-full flex-col items-center justify-center px-4 text-center">
             <h1 className="font-heading text-5xl font-bold neon-text-primary md:text-7xl">
-              Neony LED na zamowienie
+              Neony LED na zamówienie
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-foreground/80 md:text-xl">
-              Tworzymy unikalne neony i znaki swietlne dla Twojego biznesu
+              Tworzymy unikalne neony i znaki świetlne dla Twojego biznesu
             </p>
             <div className="mt-10 flex flex-col gap-4 pointer-events-auto sm:flex-row">
               <NeonButton href="/kontakt" variant="primary">
-                Zamow swoj neon
+                Zamów swój neon
               </NeonButton>
               <NeonButton href="/realizacje" variant="outline">
                 Zobacz realizacje
@@ -109,14 +109,14 @@ export default function HomePage() {
       <section className="py-20 px-4">
         <div className="mx-auto max-w-4xl rounded-2xl bg-gradient-to-r from-primary/10 to-secondary/10 px-6 py-16 text-center">
           <h2 className="font-heading text-3xl font-bold md:text-4xl">
-            Stworz swoj wlasny neon
+            Stwórz swój własny neon
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-foreground/70">
-            Powiedz nam o swojej wizji, a my zamienimy ja w swiatlo.
+            Powiedz nam o swojej wizji, a my zamienimy ją w światło.
           </p>
           <div className="mt-8">
             <NeonButton href="/kontakt" variant="primary">
-              Zamow teraz
+              Zamów teraz
             </NeonButton>
           </div>
         </div>

@@ -37,7 +37,7 @@ export default function RealizacjePage() {
     <section className="py-24 px-4">
       <SectionHeading
         title="Nasze realizacje"
-        subtitle="Zobacz wybrane projekty, ktore stworzylimy dla naszych klientow."
+        subtitle="Zobacz wybrane projekty, które stworzyliśmy dla naszych klientów."
       />
 
       <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
